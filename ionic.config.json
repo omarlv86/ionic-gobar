@@ -1,0 +1,7 @@
+{
+  "name": "listaIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  addForm: FormGroup;
 
-  constructor() {}
+  constructor(private formBuilder: FormBuilder, ) {}
+
+  ngOnInit() {
+    this.addForm = this.formBuilder.group({
+      estrellas:[],
+    });
+  }
+
+  onSubmit(){
+    console.log(this.addForm.controls);
+  }
 
 }

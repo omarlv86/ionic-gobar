@@ -13,5 +13,32 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg="4" >
+        <form [formGroup]="addForm">
+          <div class="valoracion">
+            <input id="radio1" formControlName="estrellas" type="radio" name="estrellas" value="5" disabled>
+            <label for="radio1">★</label>
+            <!---->
+            <input id="radio2" type="radio" formControlName="estrellas" name="estrellas" value="4" disabled>
+            <label for="radio2">★</label>
+            <!---->
+            <input id="radio3" type="radio" formControlName="estrellas" name="estrellas" value="3" disabled>
+            <label for="radio3">★</label>
+            <!---->
+            <input id="radio4" type="radio" formControlName="estrellas" name="estrellas" value="2" disabled>
+            <label for="radio4">★</label>
+            <!---->
+            <input id="radio5" type="radio" formControlName="estrellas" name="estrellas" value="1" disabled>
+            <label for="radio5">★</label>
+          </div>
+          <button (click)="onSubmit()">Consola</button>
+        </form>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
 </ion-content>

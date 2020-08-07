@@ -1,6 +1,10 @@
 ion-title{
     font-weight: bold;
 }
+ion-avatar{
+    display: flex;
+    align-items: center;
+}
 
 img{
     max-height:450px;

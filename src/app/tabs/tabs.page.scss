@@ -1,10 +1,15 @@
 ion-tab-button > ion-label.title{
     font-size:.1px;
     transition: ease-out .5s;
-    transition-duration: .2s
+    transition-duration: .2s;
+    font-weight: bold;
+}
+ion-tab-button{
+    font-weight: bold;
 }
 ion-tab-button.tab-selected > ion-label.title {
     font-size: 12px;
     transition: ease-in .5s;
-    transition-duration: .2s
+    transition-duration: .2s;
+    font-weight: bold;
 }

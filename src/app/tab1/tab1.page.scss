@@ -6,7 +6,6 @@ ion-avatar{
 
 img{
     max-height:450px;
-    margin:-10px;
 }
 
 .title-slide{
@@ -69,6 +68,9 @@ ion-slides{
 @media screen and (max-height: 1020px){
     img{
         width:100%;
+    }
+    .p-1{
+        padding-top: 2.2rem;
     }
 }
 

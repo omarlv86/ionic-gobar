@@ -61,9 +61,6 @@ export class Tab1Page {
     })
   }
 
-  buttonClick(){
-    console.log('Clikeando el item');
-  }
   /*
   randomData(){
     var listado:any[] = Array("Guillermo", "Lucas", "David", "Roger", "Bruno", "Iñaki", "Alex", "Carlos");

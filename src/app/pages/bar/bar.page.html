@@ -1,0 +1,27 @@
+
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <div class="container">
+      <div class="backbutton">
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+      </div>
+        <div class="title-bar">
+          <h2 class="">{{ bar?.nombreBar}}</h2>
+        </div>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <p>hola mundo</p>
+  <p>{{bar?.nombreBar}}</p>
+  <p>{{bar?.calle}}</p>
+  <p>{{bar?.colonia}}</p>
+  <p>{{bar?.direccion}}</p>
+  <img src="{{bar?.foto1Bar}}" fallimg alt="100px">
+  <img src="{{bar?.foto2Bar}}" fallimg alt="100px">
+  <img src="{{bar?.logoBar}}" fallimg alt="100px">
+</ion-content>
+

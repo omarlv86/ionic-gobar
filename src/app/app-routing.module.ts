@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'bares',
     loadChildren: () => import('./pages/bares/bares.module').then( m => m.BaresPageModule)
+  },
+  {
+    path: 'bar/:id',
+    loadChildren: () => import('./pages/bar/bar.module').then( m => m.BarPageModule)
   }
   
 ];

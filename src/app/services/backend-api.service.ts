@@ -12,4 +12,8 @@ export class BackendApiService {
   getBars(){
     return this.http.get(APIURL.bares);
   }
+  
+  getBar(id){
+    return this.http.get(`${APIURL.bares}/${id}`);
+  }
 }

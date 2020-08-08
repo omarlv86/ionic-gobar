@@ -1,0 +1,40 @@
+.container{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.backbutton{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title-bar{
+    display: inline-flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.login-header{
+    background: var(--theme-color);
+}
+
+.login-header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: var(--theme-color);
+    border-bottom: 0;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+ion-buttons{
+    display: inline-flex;
+}

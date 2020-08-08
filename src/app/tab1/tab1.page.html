@@ -1,9 +1,11 @@
-<ion-header [translucent]="true" class="ion-no-border header">
-  <ion-toolbar color="primary">
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <ion-toolbar color="primary">
+      <ion-title>
+        Home
+      </ion-title>
+    </ion-toolbar>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -49,7 +51,7 @@
     <ion-row>
       <ion-col size="12" size-lg="4" *ngFor="let bar of dataRandom">
         <ion-list>
-          <ion-item button (click)="buttonClick()">
+          <ion-item [routerLink]="['/bar', bar.idBar]">
             <ion-col>
               <div >
                 <ion-avatar  slot="start">

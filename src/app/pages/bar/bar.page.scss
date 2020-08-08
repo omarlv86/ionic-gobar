@@ -3,20 +3,7 @@
     width: 100%;
     justify-content: center;
 }
-.backbutton{
-    width: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.title-bar{
-    display: inline-flex;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-}
+
 .login-header{
     background: var(--theme-color);
 }
@@ -35,6 +22,4 @@
     margin-bottom: -15px;
 }
 
-ion-buttons{
-    display: inline-flex;
-}
+

@@ -1,4 +1,12 @@
-
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{ bar?.nombreBar}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--
 <ion-header no-border>
   <div class="login-header ion-padding">
     <div class="container">
@@ -8,20 +16,27 @@
         </ion-buttons>
       </div>
         <div class="title-bar">
-          <h2 class="">{{ bar?.nombreBar}}</h2>
+          <ion-title> {{ bar?.nombreBar}}</ion-title>
         </div>
     </div>
   </div>
 </ion-header>
+-->
 
-<ion-content>
-  <p>hola mundo</p>
-  <p>{{bar?.nombreBar}}</p>
-  <p>{{bar?.calle}}</p>
-  <p>{{bar?.colonia}}</p>
-  <p>{{bar?.direccion}}</p>
-  <img src="{{bar?.foto1Bar}}" fallimg alt="100px">
-  <img src="{{bar?.foto2Bar}}" fallimg alt="100px">
-  <img src="{{bar?.logoBar}}" fallimg alt="100px">
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg="12">
+        <p>hola mundo</p>
+        <p>{{bar?.nombreBar}}</p>
+        <p>{{bar?.calle}}</p>
+        <p>{{bar?.colonia}}</p>
+        <p>{{bar?.direccion}}</p>
+        <img src="{{bar?.foto1Bar}}" fallimg alt="100px">
+        <img src="{{bar?.foto2Bar}}" fallimg alt="100px">
+        <img src="{{bar?.logoBar}}" fallimg alt="100px">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 

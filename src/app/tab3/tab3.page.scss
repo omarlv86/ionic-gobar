@@ -1,0 +1,48 @@
+ion-grid{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  border: 2px solid var(--gs0);
+  border-radius: 8px;
+  height: 100%;
+}
+
+ion-list  ion-row{
+    scroll-snap-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  
+    border: 2px solid var(--gs0);
+    border-radius: 8px;
+    height: 33vh;
+  }
+  
+  .container div {
+    scroll-snap-align: start;
+  
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+  .container div:nth-child(1) {
+    background: hotpink;
+    color: white;
+  }
+  .container div:nth-child(2) {
+    background: azure;
+  }
+  .container div:nth-child(3) {
+    background: blanchedalmond;
+  }
+  .container div:nth-child(4) {
+    background: lightcoral;
+    color: white;
+  }

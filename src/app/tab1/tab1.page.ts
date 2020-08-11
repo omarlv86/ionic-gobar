@@ -56,6 +56,7 @@ export class Tab1Page {
         var seleccion = this.lista[aleatorio];
         this.dataRandom.push(seleccion);
         this.lista.splice(aleatorio, 1);
+        console.log(this.dataRandom);
       }
 
     })

@@ -9,76 +9,57 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col size="12" size-lg="12">
+      <ion-col size="6" size-lg="6" class="d-flex align-center justify-start">
+        <ion-text >
+          <ion-title class="pl-5" color="primary">Promociones</ion-title>
+        </ion-text>
+      </ion-col>
+      <ion-col size="6" size-lg="6" class="d-flex align-center justify-end">
+        <ion-item button>
+          <ion-label color="secondary">Ver todas</ion-label>
+        </ion-item>
+      </ion-col>
+        </ion-row>
+        <ion-row >
+            <ion-slides pager="true">
+              <ion-slide *ngFor="let slide of slides">
+                <div style="padding:10px">
+                  <img src="{{slide.img}}" alt="">
+                  <!--<h2 class="title-slide" [innerHTML]="slide.titulo"></h2>-->
+                </div>
+              </ion-slide>
+            </ion-slides>
+        </ion-row>
         <ion-row>
           <ion-col size="6" size-lg="6" class="d-flex align-center justify-start ">
-            <ion-text color="primary">
-              <h2>Promociones</h2>
+            <ion-text>
+              <ion-title class="pl-5" color="primary">Recomendados</ion-title>
             </ion-text>
           </ion-col>
           <ion-col size="6" size-lg="6" class="d-flex align-center justify-end">
-            <ion-label color="secondary">Ver todas</ion-label>
-          </ion-col>
-        </ion-row>
-        <ion-slides pager="true">
-          <ion-slide *ngFor="let slide of slides">
-            <div style="padding:10px">
-              <img src="{{slide.img}}" alt="">
-              <!--<h2 class="title-slide" [innerHTML]="slide.titulo"></h2>-->
-            </div>
-          </ion-slide>
-        </ion-slides>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12" size-lg="12" style="margin-top:20px">
-        <ion-row>
-          <ion-col size="6" size-lg="6" class="d-flex align-center justify-start p-1">
-            <ion-text color="primary">
-              <h2>Recomendados</h2>
-            </ion-text>
-          </ion-col>
-          <ion-col size="6" size-lg="6" class="d-flex align-center justify-end">
-            <ion-item [routerLink]="['/bares']">
-              <ion-label  color="secondary">Ver todos</ion-label>
+            <ion-item button [routerLink]="['/tabs/bares']">
+              <ion-label color="secondary">Ver todos</ion-label>
             </ion-item>
           </ion-col>
         </ion-row>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="12" size-lg="4" *ngFor="let bar of dataRandom">
-        <ion-list>
-          <ion-item [routerLink]="['/bar', bar.idBar]">
-            <ion-col>
-              <div >
-                <ion-avatar  slot="start">
-                  <img src="{{bar.Logo}}" fallimg>
-                </ion-avatar>
+        <ion-row>
+          <ion-col size="12" size-lg="4" *ngFor="let data of dataRandom">
+            <div class="container-list w-100" [routerLink]="['/bar', data.idBar]">
+              <div class="list-logo w-20">
+                <div class="list-logo-img">
+                  <img [src]="data.Logo" fallimg >
+                </div>
               </div>
-            </ion-col>
-            <ion-col size="8">
-              <div>
-                <ion-label >
-                  <h3 style="font-weight: bold;">{{bar.Nombre}}</h3>
-                  <p>{{bar.Colonia + ', ' +bar.Calle + ', ' + bar.Numero}}</p>
-                  
-                </ion-label>
-              
+              <div class="list-title">
+                <h4>{{ data.Nombre }}</h4>
               </div>
-            </ion-col>
-            <ion-col>
-              <div>
-                <ion-label >
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </ion-label>
+              <div class="list-icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
               </div>
-            </ion-col>
-          </ion-item>
-        </ion-list>
-      </ion-col>
-    </ion-row>
-
-
+            </div>
+          </ion-col>
+        </ion-row>
+        
   </ion-grid>
+ 
 </ion-content>

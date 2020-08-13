@@ -27,14 +27,42 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-lg="12">
-        <p>hola mundo</p>
-        <p>{{bar?.nombreBar}}</p>
+        <div style="display: flex; width: 100%; height: auto; justify-content: center; align-items: center;">
+          <img src="{{bar?.foto1Bar}}" fallimg alt="100px">
+        </div>
+        <!--<p>{{bar?.nombreBar}}</p>
         <p>{{bar?.calle}}</p>
         <p>{{bar?.colonia}}</p>
         <p>{{bar?.direccion}}</p>
         <img src="{{bar?.foto1Bar}}" fallimg alt="100px">
         <img src="{{bar?.foto2Bar}}" fallimg alt="100px">
-        <img src="{{bar?.logoBar}}" fallimg alt="100px">
+        <img src="{{bar?.logoBar}}" fallimg alt="100px">-->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" size-lg="4">
+        <div class="container-cards">
+          <div class="icon-card" style="background-color: lightcoral;">
+            <ion-icon name="beer-outline"></ion-icon>
+          </div>
+          <h3 class="card-title">Bebidas</h3>
+        </div>
+      </ion-col>
+      <ion-col size="4" size-lg="4">
+        <div class="container-cards">
+          <div class="icon-card" style="background-color:wheat;">
+            <ion-icon name="fast-food-outline"></ion-icon>
+          </div>
+          <h3 class="card-title">Comida</h3>
+        </div>
+      </ion-col>
+      <ion-col size="4" size-lg="4">
+        <div class="container-cards">
+          <div class="icon-card" style="background-color:skyblue;">
+            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+          </div>
+          <h3 class="card-title">Comentarios</h3>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -102,16 +102,16 @@ ion-slides{
   }
   .container-list{
     display: flex;
-    border: solid 1px #9d9fa6; 
+    border: solid 2px #9d9fa6; 
     border-radius: 10px;
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important;
     box-sizing: border-box;
     transition:.5s ease-out;
-    height:90px;
+    height:80px;
   }
   .container-list:hover{
       cursor: pointer;
-      border: solid 1px #efcb4b;
+      border: solid 2px #efcb4b;
       transition:.3s ease-in;
   }
   .container-list:hover > .list-icon{
@@ -139,14 +139,39 @@ ion-slides{
   .list-logo-img img{
     width: 100%; 
     height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   .list-title{
-    width: 70%; 
-    display:flex; 
-    align-items: center;
+    width: 60%; 
+    --color: initial;
+    display: block;
+    color: var(--color);
+    font-family: var(--ion-font-family, inherit);
+    font-size: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .list-title h4{
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: inherit;
+    overflow: inherit;;
+  }
+  .list-title p{
+    padding:0; margin:0px; font-size:14px; margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: inherit;
+    overflow: inherit; 
+    color: var(--ion-color-step-600, #666666);
   }
   .list-icon{
-    width: 10%; 
+    width: 20%; 
     display:flex; 
     align-items: center; 
     justify-content: center;
@@ -167,6 +192,6 @@ ion-slides{
     }
     
     .container-list{
-        height: 60px;
+        height: 70px;
     }
 }
